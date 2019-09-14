@@ -125,7 +125,7 @@ public struct LinkedList<Value> {
         return current.value
     }
     
-    /// O(n) - Takes in a node and returns the node value for the following node. This triggers the defer scope to remove the following node. Finally, if the node being removed is also the tail, the tail is set to the new "last" node value.
+    /// O(1) - Takes in a node and returns the node value for the following node. This triggers the defer scope to remove the following node. Finally, if the node being removed is also the tail, the tail is set to the new "last" node value.
     public mutating func remove(after node: Node<Value>) -> Value? {
         copyNodes()
         defer {
