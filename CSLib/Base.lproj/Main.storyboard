@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +27,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibu-zb-Ye2">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="36"/>
-                                                <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="Highlights"/>
                                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
                                                 <state key="normal" title="Push O(1)">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,7 +38,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZy-8b-1yS">
                                                 <rect key="frame" x="199" y="0.0" width="183" height="36"/>
-                                                <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="Highlights"/>
                                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
                                                 <state key="normal" title="Append O(1)">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,7 +54,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExT-dA-jhs">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="36"/>
-                                                <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="Highlights"/>
                                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
                                                 <state key="normal" title="Pop O(1)">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,7 +65,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOA-e5-pvn">
                                                 <rect key="frame" x="199" y="0.0" width="183" height="36"/>
-                                                <color key="backgroundColor" red="0.79215686269999996" green="0.24313725489999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="Secondary"/>
                                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
                                                 <state key="normal" title="Remove Last O(n)">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,29 +85,36 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(linkedList)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xv6-cI-HG3">
                                 <rect key="frame" x="16" y="198.5" width="382" height="22"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJS-Bv-xkX">
-                                <rect key="frame" x="16" y="236.5" width="382" height="23.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98b-K8-Q9M">
-                                <rect key="frame" x="16" y="236.5" width="382" height="23.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Structures: Linked Lists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVw-sz-ZrD">
                                 <rect key="frame" x="16" y="136" width="382" height="30.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJS-Bv-xkX">
+                                <rect key="frame" x="16" y="236.5" width="382" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98b-K8-Q9M">
+                                <rect key="frame" x="16" y="236.5" width="382" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-Dv-kl8">
+                                <rect key="frame" x="16" y="810" width="382" height="36"/>
+                                <state key="normal" image="Info"/>
+                                <connections>
+                                    <segue destination="zBF-Bj-8nx" kind="presentation" identifier="toLinkedListDetailVC" id="5l9-iL-f5v"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Primary"/>
                         <constraints>
                             <constraint firstItem="HJS-Bv-xkX" firstAttribute="top" secondItem="xv6-cI-HG3" secondAttribute="bottom" constant="16" id="3gO-0O-4nS"/>
                             <constraint firstItem="xv6-cI-HG3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="84v-Ci-BI0"/>
@@ -114,10 +122,13 @@
                             <constraint firstItem="HJS-Bv-xkX" firstAttribute="leading" secondItem="Ibu-zb-Ye2" secondAttribute="leading" id="O9x-GA-HDP"/>
                             <constraint firstItem="98b-K8-Q9M" firstAttribute="trailing" secondItem="BZy-8b-1yS" secondAttribute="trailing" id="Ond-Xz-Age"/>
                             <constraint firstItem="vFd-MK-oxb" firstAttribute="top" secondItem="HJS-Bv-xkX" secondAttribute="bottom" constant="32" id="VhA-JI-VaH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fOh-Dv-kl8" secondAttribute="bottom" constant="16" id="bcR-CF-hlW"/>
                             <constraint firstItem="vFd-MK-oxb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="elg-rQ-nHc"/>
                             <constraint firstItem="IVw-sz-ZrD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="fcn-0X-TPI"/>
+                            <constraint firstItem="fOh-Dv-kl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gJ0-dE-xxI"/>
                             <constraint firstItem="xv6-cI-HG3" firstAttribute="top" secondItem="IVw-sz-ZrD" secondAttribute="bottom" constant="32" id="gg4-kY-kDV"/>
                             <constraint firstItem="98b-K8-Q9M" firstAttribute="leading" secondItem="xv6-cI-HG3" secondAttribute="leading" id="hSt-qq-aAm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fOh-Dv-kl8" secondAttribute="trailing" constant="16" id="mKN-oP-Qir"/>
                             <constraint firstItem="98b-K8-Q9M" firstAttribute="top" secondItem="xv6-cI-HG3" secondAttribute="bottom" constant="16" id="pWy-bB-qG4"/>
                             <constraint firstItem="IVw-sz-ZrD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qK5-Ny-WBc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xv6-cI-HG3" secondAttribute="trailing" constant="16" id="r5n-Oa-KHH"/>
@@ -130,7 +141,7 @@
                         <barButtonItem key="backBarButtonItem" title="Linked Lists" id="uZq-be-lPl"/>
                         <barButtonItem key="rightBarButtonItem" title="Stacks &gt;" id="QA8-kh-0V4">
                             <connections>
-                                <segue destination="mPf-Id-O4d" kind="show" identifier="toStacksVC" id="F4c-oa-06I"/>
+                                <segue destination="mPf-Id-O4d" kind="show" identifier="toStackVC" id="F4c-oa-06I"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -142,10 +153,117 @@
             </objects>
             <point key="canvasLocation" x="942.02898550724649" y="24.776785714285712"/>
         </scene>
+        <!--Linked List DetailVC-->
+        <scene sceneID="RJq-Vc-weQ">
+            <objects>
+                <viewController storyboardIdentifier="linkedListDetailVC" id="zBF-Bj-8nx" customClass="LinkedListDetailVC" customModule="CSLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KyZ-g3-PSK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reH-Dk-V0e">
+                                <rect key="frame" x="16" y="128" width="382" height="441.5"/>
+                                <mutableString key="text">LINKED LISTS
+• Collection of values (chain of nodes)
+• Linear, unidirectional sequence
+
+PROS:
+• Constant time insertions and removal from the front of the list
+• Reliable performance characteristics
+• Can conform to the Sequence &amp; Collection protocols for subscripting and index functionality
+
+KEY POINTS:
+• Linked lists are linear and unidirectional. As soon as you move a reference from one node to another, you can't go back.
+• Linked lists have a O(1) time complexity for head first insertions. Arrays have O(n) time complexity for head-first insertions.
+• Conforming to Swift collection protocols such as Sequence and Collection offers a host of helpful methods for few requirements.
+• Copy-on-write behavior lets you achieve value semantics.</mutableString>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-gO-no5">
+                                <rect key="frame" x="16" y="60" width="382" height="36"/>
+                                <state key="normal" image="Cancel"/>
+                                <connections>
+                                    <action selector="dismissButtonTapped:" destination="zBF-Bj-8nx" eventType="touchUpInside" id="a7p-e0-S2Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="Primary"/>
+                        <constraints>
+                            <constraint firstItem="reH-Dk-V0e" firstAttribute="top" secondItem="wYu-gO-no5" secondAttribute="bottom" constant="32" id="AIv-0B-qJb"/>
+                            <constraint firstItem="reH-Dk-V0e" firstAttribute="leading" secondItem="oiC-Tu-HoL" secondAttribute="leading" constant="16" id="fFa-tf-hSf"/>
+                            <constraint firstItem="oiC-Tu-HoL" firstAttribute="trailing" secondItem="reH-Dk-V0e" secondAttribute="trailing" constant="16" id="sbu-ev-r5H"/>
+                            <constraint firstItem="wYu-gO-no5" firstAttribute="leading" secondItem="oiC-Tu-HoL" secondAttribute="leading" constant="16" id="tQM-hj-nCJ"/>
+                            <constraint firstItem="oiC-Tu-HoL" firstAttribute="trailing" secondItem="wYu-gO-no5" secondAttribute="trailing" constant="16" id="uPb-he-jb6"/>
+                            <constraint firstItem="wYu-gO-no5" firstAttribute="top" secondItem="oiC-Tu-HoL" secondAttribute="top" constant="16" id="zae-xa-7Mn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oiC-Tu-HoL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIA-xR-Srx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="734"/>
+        </scene>
+        <!--Stack DetailVC-->
+        <scene sceneID="kWC-Hl-Tyz">
+            <objects>
+                <viewController storyboardIdentifier="stackDetailVC" id="cXR-YR-llB" customClass="StackDetailVC" customModule="CSLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NSA-wC-1Df">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdM-a2-y87">
+                                <rect key="frame" x="16" y="60" width="382" height="36"/>
+                                <state key="normal" image="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="cXR-YR-llB" eventType="touchUpInside" id="La2-hu-UwQ"/>
+                                    <action selector="dismissButtonTapped:" destination="zBF-Bj-8nx" eventType="touchUpInside" id="7Gs-yn-Il3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZD-RT-aSw">
+                                <rect key="frame" x="16" y="128" width="382" height="525"/>
+                                <mutableString key="text">STACKS 
+• LIFO (last-in-first-out) --&gt; Remove the top element first
+
+CORE OPERATIONS:
+• Push --&gt; Add an item to the top of the stack
+• Pop --&gt; Removing the top element from a stack
+
+EXMPLES:
+• iOS navigation controller --&gt; push and pop view controllers on and off the stack
+• Memory allocation uses stacks at architectural level
+• Search and conquor algorythms
+• Imagine finding your way through a maze. Each time you come to a decision point of left, right or straight, you can push all possible decisions onto your stack. When you hit a dead end, simply backtrack by popping from the stack and continuing until you escape or hit another dead end.
+
+KEY POINTS:
+• Despite being so simple, the stack is a key data structure for many problems.
+• The only two essential operations for the stack are the push method for adding elements and the pop method for removing elements.</mutableString>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431372549018" green="0.16470588235294117" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hdM-a2-y87" firstAttribute="top" secondItem="JV8-E0-RMt" secondAttribute="top" constant="16" id="7Ex-kh-TNm"/>
+                            <constraint firstItem="hdM-a2-y87" firstAttribute="leading" secondItem="JV8-E0-RMt" secondAttribute="leading" constant="16" id="D7K-WD-Wyc"/>
+                            <constraint firstItem="JV8-E0-RMt" firstAttribute="trailing" secondItem="zZD-RT-aSw" secondAttribute="trailing" constant="16" id="RwM-nC-O6j"/>
+                            <constraint firstItem="zZD-RT-aSw" firstAttribute="leading" secondItem="JV8-E0-RMt" secondAttribute="leading" constant="16" id="dej-hv-07F"/>
+                            <constraint firstItem="zZD-RT-aSw" firstAttribute="top" secondItem="hdM-a2-y87" secondAttribute="bottom" constant="32" id="ej9-VO-dlM"/>
+                            <constraint firstItem="JV8-E0-RMt" firstAttribute="trailing" secondItem="hdM-a2-y87" secondAttribute="trailing" constant="16" id="ffe-ki-AlC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JV8-E0-RMt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35o-qi-Fg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="734"/>
+        </scene>
         <!--StackVC-->
         <scene sceneID="ojZ-CS-pMb">
             <objects>
-                <viewController storyboardIdentifier="stacksVC" id="mPf-Id-O4d" customClass="StackVC" customModule="CSLib" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stackVC" id="mPf-Id-O4d" customClass="StackVC" customModule="CSLib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VdI-fj-SHa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,22 +271,23 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(stack)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azP-l0-ZNj">
                                 <rect key="frame" x="16" y="230.5" width="382" height="22"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Structures: Stacks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLI-wD-NqY">
                                 <rect key="frame" x="16" y="136" width="382" height="30.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="owI-ko-Ek1">
-                                <rect key="frame" x="16" y="694" width="382" height="88"/>
+                                <rect key="frame" x="16" y="674" width="382" height="88"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh7-3z-ZTS">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="36"/>
                                         <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                        <color key="tintColor" name="Highlights"/>
                                         <state key="normal" title="Push O(1)">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -181,6 +300,7 @@
                                         <rect key="frame" x="0.0" y="52" width="382" height="36"/>
                                         <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                        <color key="tintColor" name="Highlights"/>
                                         <state key="normal" title="Pop O(1)">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -191,8 +311,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkw-ZW-TyL">
+                                <rect key="frame" x="16" y="810" width="382" height="36"/>
+                                <state key="normal" image="Info"/>
+                                <connections>
+                                    <segue destination="cXR-YR-llB" kind="presentation" identifier="toStackDetailVC" id="HNS-rs-bsH"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Primary"/>
                         <constraints>
                             <constraint firstItem="azP-l0-ZNj" firstAttribute="top" secondItem="eLI-wD-NqY" secondAttribute="bottom" constant="64" id="1S3-r8-leq"/>
                             <constraint firstItem="gwA-ec-dCP" firstAttribute="trailing" secondItem="azP-l0-ZNj" secondAttribute="trailing" constant="16" id="4Ev-YA-IkB"/>
@@ -200,9 +327,12 @@
                             <constraint firstItem="gwA-ec-dCP" firstAttribute="trailing" secondItem="eLI-wD-NqY" secondAttribute="trailing" constant="16" id="A8Y-N2-n8d"/>
                             <constraint firstItem="eLI-wD-NqY" firstAttribute="leading" secondItem="gwA-ec-dCP" secondAttribute="leading" constant="16" id="BgU-BB-bql"/>
                             <constraint firstItem="owI-ko-Ek1" firstAttribute="leading" secondItem="gwA-ec-dCP" secondAttribute="leading" constant="16" id="ECk-ix-0Ig"/>
+                            <constraint firstItem="gwA-ec-dCP" firstAttribute="trailing" secondItem="zkw-ZW-TyL" secondAttribute="trailing" constant="16" id="EG8-JD-RH5"/>
+                            <constraint firstItem="zkw-ZW-TyL" firstAttribute="top" secondItem="owI-ko-Ek1" secondAttribute="bottom" constant="48" id="VdJ-zW-xEN"/>
                             <constraint firstItem="gwA-ec-dCP" firstAttribute="trailing" secondItem="owI-ko-Ek1" secondAttribute="trailing" constant="16" id="X9t-tE-CBF"/>
                             <constraint firstItem="eLI-wD-NqY" firstAttribute="top" secondItem="gwA-ec-dCP" secondAttribute="top" constant="48" id="aKx-lL-Dbx"/>
-                            <constraint firstItem="gwA-ec-dCP" firstAttribute="bottom" secondItem="owI-ko-Ek1" secondAttribute="bottom" constant="80" id="moN-bw-ps5"/>
+                            <constraint firstItem="gwA-ec-dCP" firstAttribute="bottom" secondItem="zkw-ZW-TyL" secondAttribute="bottom" constant="16" id="b11-zS-Hzs"/>
+                            <constraint firstItem="zkw-ZW-TyL" firstAttribute="leading" secondItem="gwA-ec-dCP" secondAttribute="leading" constant="16" id="zdf-R5-8U6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gwA-ec-dCP"/>
                     </view>
@@ -219,7 +349,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fla-mu-wMp" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gfE-ZU-tqh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="gfE-ZU-tqh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.0" green="0.67843137249999996" blue="0.70980392160000005" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
@@ -234,4 +364,17 @@
             <point key="canvasLocation" x="31.884057971014496" y="24.776785714285712"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cancel" width="36" height="36"/>
+        <image name="Info" width="36" height="36"/>
+        <namedColor name="Highlights">
+            <color red="0.0" green="0.67843137254901964" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.16078431372549021" green="0.16470588235294117" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary">
+            <color red="0.792156862745098" green="0.24313725490196078" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

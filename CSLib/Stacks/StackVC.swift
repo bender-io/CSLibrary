@@ -30,7 +30,7 @@ class StackVC: UIViewController {
     
     @IBAction func popButtonTapped(_ sender: Any) {
         let pop = stack.pop()
-        print(pop as Any)
+        print("Popped Value: \(pop as Any)")
         updateViews()
     }
     

@@ -15,6 +15,8 @@
 		56D14556232C7891006C167F /* LinkedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D14555232C7891006C167F /* LinkedListVC.swift */; };
 		56D14559232C8BDB006C167F /* StackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D14558232C8BDB006C167F /* StackVC.swift */; };
 		56D1455B232C8BE3006C167F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D1455A232C8BE3006C167F /* Stack.swift */; };
+		56D1455E232CB2A8006C167F /* LinkedListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D1455D232CB2A8006C167F /* LinkedListDetailVC.swift */; };
+		56D14560232CB671006C167F /* StackDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D1455F232CB671006C167F /* StackDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		56D14555232C7891006C167F /* LinkedListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListVC.swift; sourceTree = "<group>"; };
 		56D14558232C8BDB006C167F /* StackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackVC.swift; sourceTree = "<group>"; };
 		56D1455A232C8BE3006C167F /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		56D1455D232CB2A8006C167F /* LinkedListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListDetailVC.swift; sourceTree = "<group>"; };
+		56D1455F232CB671006C167F /* StackDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			children = (
 				56D1454F232C778C006C167F /* LinkedList.swift */,
 				56D14555232C7891006C167F /* LinkedListVC.swift */,
+				56D1455D232CB2A8006C167F /* LinkedListDetailVC.swift */,
 			);
 			path = LinkedLists;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			children = (
 				56D1455A232C8BE3006C167F /* Stack.swift */,
 				56D14558232C8BDB006C167F /* StackVC.swift */,
+				56D1455F232CB671006C167F /* StackDetailVC.swift */,
 			);
 			path = Stacks;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 			files = (
 				56D1455B232C8BE3006C167F /* Stack.swift in Sources */,
 				56D14556232C7891006C167F /* LinkedListVC.swift in Sources */,
+				56D1455E232CB2A8006C167F /* LinkedListDetailVC.swift in Sources */,
+				56D14560232CB671006C167F /* StackDetailVC.swift in Sources */,
 				56D14550232C778C006C167F /* LinkedList.swift in Sources */,
 				56D1453D232C7750006C167F /* AppDelegate.swift in Sources */,
 				56D14559232C8BDB006C167F /* StackVC.swift in Sources */,
