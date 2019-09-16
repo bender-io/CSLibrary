@@ -441,6 +441,7 @@ KEY POINTS:
                                 <state key="normal" image="Info"/>
                                 <connections>
                                     <action selector="infoButtonTapped:" destination="AGt-T1-NX4" eventType="touchUpInside" id="Ncg-mb-b2P"/>
+                                    <segue destination="liJ-uk-WCW" kind="presentation" identifier="toQueueDetailVC" id="9Ij-pF-ewc"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddh-ku-t7g">
@@ -511,6 +512,67 @@ KEY POINTS:
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOZ-0X-UoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="24.776785714285712"/>
+        </scene>
+        <!--Queue DetailVC-->
+        <scene sceneID="wM9-CM-ioC">
+            <objects>
+                <viewController storyboardIdentifier="queueDetailVC" id="liJ-uk-WCW" customClass="QueueDetailVC" customModule="CSLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ArA-ih-6Bv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FB-vq-DeI">
+                                <rect key="frame" x="16" y="128" width="382" height="533"/>
+                                <mutableString key="text">QUEUES:
+• Queues use FIFO or first-in first-out ordering, meaning the first element that was added will always be the first to be removed. Queues are handy when you need to maintain the order of your elements to process later.
+
+COMMON OPERATIONS:
+• Enqueue: Insert an element at the back of the queue. Returns true if the operation was successful (get in back line)
+• Dequeue: Remove the element at the front of the queue and return it (complete and exit front of line)
+• isEmpty: Checks if the queue is empty
+• Peek: Return the element at the front of the queue without removing it
+
+NOTES
+• The queue only cares about removal from the front and insertion at the back. You don’t really need to know what the contents are in between. If you did, you would probably just use an array.
+• Queues can be built from: Arrays, Doubly Linked Lists, Ring-Buffers &amp; Double Stacks 
+
+KEY POINTS:
+• Queue takes a FIFO strategy, an element added first must also be removed first.
+• Enqueue inserts an element to the back of the queue.
+• Dequeue removes the element at the front of the queue.
+• Elements in an array are laid out in contiguous memory blocks, whereas elements in a linked list are more scattered with potential for cache misses.
+• Ring-buffer-queue based implementation is good for queues with a fixed size.
+• Compared to other data structures, leveraging two stacks improves the dequeue(_:) time complexity to amortized O(1) operation.
+• Double-stack implementation beats out Linked-list in terms of spacial locality.</mutableString>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-y7-8ge">
+                                <rect key="frame" x="16" y="60" width="382" height="36"/>
+                                <state key="normal" image="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="cXR-YR-llB" eventType="touchUpInside" id="azP-l4-z4q"/>
+                                    <action selector="dismissButtonTapped:" destination="zBF-Bj-8nx" eventType="touchUpInside" id="Qqg-bV-0sR"/>
+                                    <action selector="dismissButtonTapped:" destination="liJ-uk-WCW" eventType="touchUpInside" id="hs0-xM-8fD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="Primary"/>
+                        <constraints>
+                            <constraint firstItem="xdI-y7-8ge" firstAttribute="top" secondItem="Kh0-1Y-H6e" secondAttribute="top" constant="16" id="C6B-sz-IC0"/>
+                            <constraint firstItem="6FB-vq-DeI" firstAttribute="leading" secondItem="Kh0-1Y-H6e" secondAttribute="leading" constant="16" id="D1R-qJ-xFD"/>
+                            <constraint firstItem="xdI-y7-8ge" firstAttribute="leading" secondItem="Kh0-1Y-H6e" secondAttribute="leading" constant="16" id="X0I-U8-tE5"/>
+                            <constraint firstItem="Kh0-1Y-H6e" firstAttribute="trailing" secondItem="xdI-y7-8ge" secondAttribute="trailing" constant="16" id="eBa-IS-SSM"/>
+                            <constraint firstItem="6FB-vq-DeI" firstAttribute="top" secondItem="xdI-y7-8ge" secondAttribute="bottom" constant="32" id="hN2-kH-EE7"/>
+                            <constraint firstItem="Kh0-1Y-H6e" firstAttribute="trailing" secondItem="6FB-vq-DeI" secondAttribute="trailing" constant="16" id="ktg-lM-6u9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kh0-1Y-H6e"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zK5-pZ-aBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2698.5507246376815" y="733.92857142857144"/>
         </scene>
     </scenes>
     <resources>

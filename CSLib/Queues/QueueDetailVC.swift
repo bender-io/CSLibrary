@@ -10,8 +10,13 @@ import UIKit
 
 class QueueDetailVC: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    // MARK: - Properties
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    // MARK: - IBActions
+    @IBAction func dismissButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }

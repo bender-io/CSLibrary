@@ -15,11 +15,6 @@ class StackDetailVC: UIViewController {
         return .lightContent
     }
     
-    // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     // MARK: - IBActions
     @IBAction func cancelButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
