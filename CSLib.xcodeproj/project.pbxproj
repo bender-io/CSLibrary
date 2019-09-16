@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56A98007232F639700371FAC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A98006232F639700371FAC /* Queue.swift */; };
+		56A98009232F63D800371FAC /* QueueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A98008232F63D800371FAC /* QueueVC.swift */; };
+		56A9800B232F63F600371FAC /* QueueDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9800A232F63F600371FAC /* QueueDetailVC.swift */; };
 		56D1453D232C7750006C167F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D1453C232C7750006C167F /* AppDelegate.swift */; };
 		56D14542232C7750006C167F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D14540232C7750006C167F /* Main.storyboard */; };
 		56D14544232C7754006C167F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D14543232C7754006C167F /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56A98006232F639700371FAC /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		56A98008232F63D800371FAC /* QueueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueVC.swift; sourceTree = "<group>"; };
+		56A9800A232F63F600371FAC /* QueueDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueDetailVC.swift; sourceTree = "<group>"; };
 		56D14539232C7750006C167F /* CSLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D1453C232C7750006C167F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56D14541232C7750006C167F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56A9800C232F63FF00371FAC /* Queues */ = {
+			isa = PBXGroup;
+			children = (
+				56A98006232F639700371FAC /* Queue.swift */,
+				56A98008232F63D800371FAC /* QueueVC.swift */,
+				56A9800A232F63F600371FAC /* QueueDetailVC.swift */,
+			);
+			path = Queues;
+			sourceTree = "<group>";
+		};
 		56D14530232C7750006C167F = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +84,7 @@
 				56D14540232C7750006C167F /* Main.storyboard */,
 				56D14557232C82D2006C167F /* LinkedLists */,
 				56D1455C232C8CD2006C167F /* Stacks */,
+				56A9800C232F63FF00371FAC /* Queues */,
 			);
 			path = CSLib;
 			sourceTree = "<group>";
@@ -179,7 +196,10 @@
 				56D1455E232CB2A8006C167F /* LinkedListDetailVC.swift in Sources */,
 				56D14560232CB671006C167F /* StackDetailVC.swift in Sources */,
 				56D14550232C778C006C167F /* LinkedList.swift in Sources */,
+				56A9800B232F63F600371FAC /* QueueDetailVC.swift in Sources */,
 				56D1453D232C7750006C167F /* AppDelegate.swift in Sources */,
+				56A98007232F639700371FAC /* Queue.swift in Sources */,
+				56A98009232F63D800371FAC /* QueueVC.swift in Sources */,
 				56D14559232C8BDB006C167F /* StackVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
